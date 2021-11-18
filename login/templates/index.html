@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>login</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/post" method="post">
+            <label id="ID"> I D </label><input type="text" name="inputID" id="IDbox">
+            <label id="PW"> PW </label><input type="password" name="inputPW" id="PWbox">
+            <button>로그인</button>
+        </form>
+        <div class="search">
+            <button>회원가입</button>
+            <button>찾기</button>
+        </div>
+    </div>
+</body>
+
+</html>
